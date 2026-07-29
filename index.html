@@ -34,7 +34,13 @@ margin: 0 auto;
     <p>Bem-vindo(a) ao Blog Estúdio Ghibli!
         Aqui encontratará curiosidades, histórias, classificações e muito mais sobre este incrível universo.
     </p>
+    ​<button>​🌸​<span>0</span></button>
+    
     </header>
+
+
+
+
     <main>
     <h3>Mas... o que é Estúdio Ghibli?</h3>
     <p>
@@ -185,4 +191,22 @@ Muitos ambientes dos filmes foram baseados em cidades e paisagens do Japão, da 
 
 </main>
 </body>
+
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
+
+
+
+
+
+
+
+
+
 </html>
